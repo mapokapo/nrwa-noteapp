@@ -22,10 +22,10 @@
                 <input type="hidden" name="csrf_token" value="<?= Security::escape($csrfToken) ?>">
 
                 <label for="login-email">Email</label>
-                <input id="login-email" name="email" type="email" value="ana.horvat@example.com" required>
+                <input id="login-email" name="email" type="email" required>
 
                 <label for="login-password">Lozinka</label>
-                <input id="login-password" name="lozinka" type="password" value="password" required>
+                <input id="login-password" name="lozinka" type="password" required>
 
                 <button class="button" type="submit">Prijavi se</button>
             </form>

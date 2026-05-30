@@ -23,7 +23,7 @@ try {
 
     $noteController = new NoteController($connection);
     $apiNoteController = new ApiNoteController($connection, $authMiddleware);
-    $apiCategoryController = new ApiCategoryController($connection);
+    $apiCategoryController = new ApiCategoryController($connection, $authMiddleware);
     $apiAuthController = new ApiAuthController($connection, $jwtConfig);
     $adminController = new AdminController($connection, $authMiddleware);
     $router = new Router();
